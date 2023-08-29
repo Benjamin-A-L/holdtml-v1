@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+}
+.hero{
+    display: grid;
+    justify-content: center;
+    margin-top: 40px;
+}
+.hero-container{
+    display: grid;
+    
+}
+.hero-container h1{
+    font-family: 'Rubik', 'sans-serif';
+    color: rgb(255, 255, 255);
+    background-color: rgba(219, 155, 96, 0.596);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 14px 10px rgba(219, 155, 96, 0.6);
+    font-size: 30px;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    overflow: hidden;
+}
+.hero-backgroud-img{
+    object-fit: cover;
+    width: 96vw;
+    height: 75dvh;
+    border: solid 6px black;
+    border-radius: 20px;
+}
