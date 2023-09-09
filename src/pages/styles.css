@@ -3,16 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-.body{
+#homepage-body{
+    display: grid;
+    justify-content: center;
+    /* grid-gap: 20px; */
 }
 .hero{
     display: grid;
     justify-content: center;
+    justify-items: center;
     margin-top: 40px;
+}
+.slice-wrapp{
+    height: 100dvh;
+    width: 100dvw;
+    box-sizing: border-box;
+    border: solid 2px black;
 }
 .hero-container{
     display: grid;
-    
 }
 .hero-container h1{
     font-family: 'Rubik', 'sans-serif';
@@ -29,8 +38,74 @@
 }
 .hero-backgroud-img{
     object-fit: cover;
-    width: 96vw;
+    width: 96dvw;
     height: 75dvh;
     border: solid 6px black;
     border-radius: 20px;
+}
+.que_hacemos_slice{
+    justify-self: center;
+    font-family: 'Rubik', 'sans-serif';
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 66dvw;
+    padding: 20px;
+    background-color: rgba(219, 155, 96, 0.596);
+    border-radius: 10px;
+}
+.que_hacemos_slice h2{
+    grid-column: 1/-1;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.que_hacemos_slice .p1{
+    margin: 10px 0px;
+    grid-column: 1/-1;
+}
+.que_hacemos_slice .p2{
+    margin: 10px 0px;
+    grid-column: 1/10;
+}
+.que_hacemos_slice ul{
+    grid-column: 1/6;
+}
+.que_hacemos_slice_list li{
+    padding-left: 10px;
+    list-style: disc inside;
+    margin-top: 4px;
+}
+#que_hacemos_slice_CTA{
+    text-decoration: none;
+    border: solid 2px black;
+    border-radius: 4px;
+    grid-column: 10/-1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transition: 0.4s;
+}
+#que_hacemos_slice_CTA:hover{
+    background-color: black;
+    color: white;
+}
+.quienes_somos_slice{
+    justify-self: center;
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    width: 66dvw;
+    padding: 20px;
+    background-color: rgba(219, 155, 96, 0.596);
+    border-radius: 10px;
+}
+.quienes_somos_slice h2{
+    grid-column: 1/-1;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.quienes_somos_slice p{
+    margin: 10px 0px;
+    grid-column: 1/-1;
 }

@@ -13,17 +13,31 @@ export const NavWrapper = styled.div`
     width: 100%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: auto auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
     padding: 20px;
     background-color: rgb(200,200,200,1);
     margin: none;
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 100;
-
+    
     .trigger_element{
-
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 15px;
+        z-index: 101;
+        background-color: rgb(0, 55, 220, 0.4);
+    
+        :hover{
+            position: sticky;
+            top: 0;
+            background-color: black;
+          }
     }
+    .hover-target .trigger_element:hover {
+        background-color: black;
+      }
+
     .NavConsole{
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -56,7 +70,7 @@ export const NavWrapper = styled.div`
         border-radius: 12px;
         box-sizing: border-box;
         border: solid 2px rgb(33, 33, 33, 0);
-        transition: 2.4s;
+        transition: 1.4s;
     }
     .a_tag_shadow_div:hover{
         box-shadow: 1px 1px 200px 1px rgb(22, 22, 22, 0.7);
@@ -64,9 +78,10 @@ export const NavWrapper = styled.div`
         border: solid 2px rgb(223, 123, 30, 0.8);
     }
 `
-export const NavConsole = styled.div`
+// export const TriggerElement = styled.div`
 
-`
+
+// `
 
 export const Logo = () =>{
     return <LogoStyled><b>&lt;H</b><span style={{color: 'rgb(223, 123, 30)'}}>old</span><b>TML/&gt;</b></LogoStyled>
